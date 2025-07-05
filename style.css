@@ -1,0 +1,170 @@
+/*
+  style.css
+  Nature-inspired blue & teal palette for trust and calmness
+  Modern, easy-to-read font
+*/
+
+/* Set a modern, readable font for the whole page */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif; /* Modern font stack */
+  background-color: #e6f7fa; /* Light teal background for calmness */
+  color: #1a3a4f; /* Deep blue for text */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Make sure body fills the viewport */
+}
+
+header {
+  /* Simple header styling to match the palette */
+  background-color: #178ca4; /* Teal blue */
+  padding: 18px 0;
+  text-align: center;
+}
+
+header h2 {
+  color: #fff; /* White text for contrast */
+  font-size: 1.6em;
+  margin: 0;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+main {
+  /* Remove max-width and center, make main fill the page */
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+section {
+  margin-bottom: 0; /* Remove extra space between sections */
+}
+
+h1 {
+  /* Make the heading stand out */
+  color: #178ca4; /* Teal blue */
+  font-size: 2em;
+  margin-bottom: 24px; /* More space below heading */
+}
+
+p {
+  /* Style the description text */
+  font-size: 1.1em;
+  margin-bottom: 36px; /* More space below paragraph */
+}
+
+.cta-button {
+  /* Eye-catching call-to-action button */
+  display: inline-block;
+  background-color: #1ecbe1; /* Bright teal */
+  color: #fff; /* White text for contrast */
+  text-decoration: none;
+  padding: 14px 10px; /* Add a little horizontal padding for comfort */
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 1.1em; /* Restore previous font size */
+  letter-spacing: 1px;
+  box-shadow: 0 0px 6px rgba(30, 203, 225, 0.15); /* Soft shadow */
+  transition: background 0.2s;
+  min-width: 0;
+  width: auto; /* Button width fits the text */
+  text-align: center; /* Center text in the button */
+  padding-left: 20px;
+  padding-right: 20px;
+  min-width: 0; /* Remove any minimum width */
+  width: auto;   /* Let the button size to its content */
+}
+
+.cta-button:hover {
+  /* Slightly darker on hover for feedback */
+  background-color: #178ca4;
+}
+
+section.cta {
+  /* Banner background image with a light overlay for readability */
+  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('img/cta-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0;
+  padding: 64px 0; /* Remove side padding, keep vertical */
+  box-sizing: border-box;
+  text-align: center; /* Center all content in the banner */
+}
+
+section.cta h1,
+section.cta p,
+section.cta .cta-button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+section.cta .cta-button {
+  margin-top: 32px; /* Add space above the button */
+}
+
+section.cta h1 {
+  margin-top: 0; /* Remove extra space above the main heading */
+}
+
+/* Info section with image and text side by side */
+.info-section {
+  display: table; /* Simple two-column layout for beginners */
+  width: 100%; /* Expand to full width */
+  max-width: none; /* Remove max-width limit */
+  margin: 0; /* Remove side auto margin */
+  background: #f4fcfd; /* Very light teal for contrast */
+  border-radius: 0; /* Remove border radius for full width */
+  box-shadow: none; /* Remove shadow for edge-to-edge look */
+  overflow: hidden;
+}
+
+.info-img {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+  max-width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 15px
+}
+
+.info-text {
+  display: table-cell;
+  width: 60%;
+  padding: 36px 32px 36px 32px;
+  vertical-align: middle;
+  color: #1a3a4f;
+  font-size: 1em;
+}
+
+.info-text h2 {
+  color: #178ca4;
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 1.3em;
+}
+
+.info-text p {
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .info-section {
+    display: block;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .info-img, .info-text {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .info-text {
+    padding: 20px;
+  }
+}
